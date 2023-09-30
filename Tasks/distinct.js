@@ -3,11 +3,11 @@
 const distinct = (data) => {
   const collection = new Set();
   let currentIndex  = 0;
-  data.forEach((a) => {
-    if (collection.has(a)) {
+  data.forEach((currentElement ) => {
+    if (collection.has(currentElement )) {
       delete data[currentIndex];
     } else {
-      collection.add(a);
+      collection.add(currentElement );
     }
     currentIndex++;
   });

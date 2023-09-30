@@ -1,13 +1,13 @@
 // Return an array without duplicates
 
 const distinct = (data) => {
-  A = new Set();
+  const collection = new Set();
   w = 0;
   data.forEach((a) => {
-    if (A.has(a)) {
+    if (collection.has(a)) {
       delete data[w];
     } else {
-      A.add(a);
+      collection.add(a);
     }
     w++;
   });

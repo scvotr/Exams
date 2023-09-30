@@ -2,14 +2,14 @@
 
 const distinct = (data) => {
   const collection = new Set();
-  w = 0;
+  let currentIndex  = 0;
   data.forEach((a) => {
     if (collection.has(a)) {
-      delete data[w];
+      delete data[currentIndex];
     } else {
       collection.add(a);
     }
-    w++;
+    currentIndex++;
   });
   return data.filter
   (x => typeof x === 'number');

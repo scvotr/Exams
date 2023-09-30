@@ -6,8 +6,8 @@ let compare = (first_values, ...parameters_list) => {
   let secondValuesKeys = Object.keys(second_values);
   if (firstValuesKey.join('-') !== secondValuesKeys.join('-')) return false;
   let isMatch = true;
-  for (c of firstValuesKey) {
-    if (first_values[c] === second_values[c]) isMatch = isMatch && true;
+  for (currentKey of firstValuesKey) {
+    if (first_values[currentKey] === second_values[currentKey]) isMatch = isMatch && true;
     else {
       isMatch = isMatch && false;
     }

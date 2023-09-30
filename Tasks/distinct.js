@@ -12,7 +12,7 @@ const distinct = (data) => {
     currentIndex++;
   });
   return data.filter
-  (x => typeof x === 'number');
+  (currentValue => typeof currentValue === 'number');
 };
 
 require('../Tests/distinct.js')(distinct);

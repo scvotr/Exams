@@ -5,14 +5,14 @@ let compare = (first_values, ...parameters_list) => {
   let firstValuesKey = Object.keys(first_values);
   let secondValuesKeys = Object.keys(second_values);
   if (firstValuesKey.join('-') !== secondValuesKeys.join('-')) return false;
-  let e = true;
+  let isMatch = true;
   for (c of firstValuesKey) {
-    if (first_values[c] === second_values[c]) e = e && true;
+    if (first_values[c] === second_values[c]) isMatch = isMatch && true;
     else {
-      e = e && false;
+      isMatch = isMatch && false;
     }
   }
-  return e;
+  return isMatch;
 };
 
 require('../Tests/compare.js')(compare);

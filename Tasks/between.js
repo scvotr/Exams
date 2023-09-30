@@ -1,6 +1,6 @@
 // Extract substring between prefix and suffix
 
-const getvalueBetween = (str, p, s) => {
+const getValueBetween = (str, p, s) => {
   let i = str.indexOf(p);
   if (i === -1) return '';
   else {
@@ -18,4 +18,4 @@ const getvalueBetween = (str, p, s) => {
   return str;
 };
 
-require('../Tests/between.js')(getvalueBetween);
+require('../Tests/between.js')(getValueBetween);

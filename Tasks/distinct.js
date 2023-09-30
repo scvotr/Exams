@@ -1,7 +1,6 @@
 // Return an array without duplicates
 
 const distinct = (data) => {
-  console.log({ data });
   A = new Set();
   w = 0;
   data.forEach((a) => {

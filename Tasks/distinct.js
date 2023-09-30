@@ -1,6 +1,6 @@
 // Return an array without duplicates
 
-DISTINCT = (data) => {
+const distinct = (data) => {
   console.log({ data });
   A = new Set();
   w = 0;
@@ -16,4 +16,4 @@ DISTINCT = (data) => {
   (x => typeof x === 'number');
 };
 
-require('../Tests/distinct.js')(DISTINCT);
+require('../Tests/distinct.js')(distinct);
